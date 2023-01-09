@@ -38,6 +38,7 @@ services:
 
 networks:
   pihole_net:
+    name: pi_net
     driver: bridge
     ipam:
      config:
