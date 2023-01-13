@@ -11,6 +11,8 @@ services:
 
   pihole:
     container_name: pihole
+    depends_on:
+      - cloudflared
     image: pihole/pihole:latest
     restart: unless-stopped
     ports:
